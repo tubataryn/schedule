@@ -18,6 +18,10 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/af.js"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
   </head>
@@ -29,10 +33,71 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+
+      <div class="row">
+        <div class="col-2" id="column">Time</div>
+        <div class="col-8">Notes & Events</div>
+        <div class="col-2" id="add-event-buttons"></div>
+      </div>
+
+      <div class="row" data-value="9" id="9">
+        <div class="col-2 hour" id="hour">9:00</div>
+        <div class="col-8"><input type="text" id="9am" data-value="9" class="saved-events"></div>
+        <div class="col-2" id="add-event-buttons"><button class="saveBtn" data-value="#9am">Save</button></div>
+      </div>
+
+      <div class="row" data-value="10" id="10">
+        <div class="col-2 hour" id="hour">10:00</div>
+        <div class="col-8"><input type="text" id="10am" data-value="10" class="saved-events"></div>
+        <div class="col-2" id="add-event-buttons"><button class="saveBtn" data-value="#10am">Save</button></div>
+      </div>
+
+      <div class="row" data-value="11" id="11">
+        <div class="col-2 hour" id="hour">11:00</div>
+        <div class="col-8"><input type="text" id="11am" data-value="11" class="saved-events"></div>
+        <div class="col-2" id="add-event-buttons"><button class="saveBtn" data-value="#11am">Save</button></div>
+      </div>
+
+      <div class="row" data-value="12" id="12">
+        <div class="col-2 hour" id="hour">12:00</div>
+        <div class="col-8"><input type="text" id="12pm" data-value="12" class="saved-events"></div>
+        <div class="col-2" id="add-event-buttons"><button class="saveBtn" data-value="#12pm">Save</button></div>
+      </div>
+
+      <div class="row" data-value="13" id="13">
+        <div class="col-2 hour" id="hour">1:00</div>
+        <div class="col-8"><input type="text" id="13pm" data-value="13" class="saved-events"></div>
+        <div class="col-2" id="add-event-buttons"><button class="saveBtn" data-value="#13pm">Save</button></div>
+      </div>
+
+      <div class="row" data-value="14" id="14">
+        <div class="col-2 hour" id="hour">2:00</div>
+        <div class="col-8"><input type="text" id="14pm" data-value="14" class="saved-events"></div>
+        <div class="col-2" id="add-event-buttons"><button class="saveBtn" data-value="#14pm">Save</button></div>
+      </div>
+
+      <div class="row" data-value="15" id="15">
+        <div class="col-2 hour" id="hour">3:00</div>
+        <div class="col-8"><input type="text" id="15pm" data-value="15" class="saved-events"></div>
+        <div class="col-2" id="add-event-buttons"><button class="saveBtn" data-value="#15pm">Save</button></div>
+      </div>
+
+      <div class="row" data-value="16" id="16">
+        <div class="col-2 hour" id="hour">4:00</div>
+        <div class="col-8"><input type="text" id="16pm" data-value="16" class="saved-events"></div>
+        <div class="col-2" id="add-event-buttons"><button class="saveBtn" data-value="#16pm">Save</button></div>
+      </div>
+
+      <div class="row" data-value="17" id="17">
+        <div class="col-2 hour" id="hour">5:00</div>
+        <div class="col-8"><input type="text" id="17pm" data-value="17" class="saved-events"></div>
+        <div class="col-2" id="add-event-buttons"><button class="saveBtn" data-value="#17pm">Save</button></div>
+      </div>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
