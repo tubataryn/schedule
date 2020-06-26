@@ -14,11 +14,12 @@ $(document).ready(function () {
         localStorage.setItem(click, eventInput)
     });
 
-    let timeBlock = ["#9am", "#10am", "#11am", "#12pm", "#1pm", "#2pm", "#3pm", "#4pm", "#5pm"]
+    let timeBlock = ["#9am", "#10am", "#11am", "#12pm", "#13pm", "#14pm", "#15pm", "#16pm", "#17pm"]
 
     for (let i = 0; i < timeBlock.length; i++) {
         let savedEvent = $(".saved-event")
         console.log("looping time block to retrieve LS");
+        console.log(timeBlock[i], localStorage.getItem(timeBlock))
         $(timeBlock[i]).val(localStorage.getItem(timeBlock[i]));
     };
 
